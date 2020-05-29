@@ -9,12 +9,13 @@
     display: flex;
     height: 500px;
     flex-direction:row;
-
   }
+
   #box-1 {
     background-color: dodgerblue;
     width: 20%;
     height: 50%;
+    flex-basis: 0;
   }
 
   #box-2 {
@@ -27,12 +28,17 @@
     width: 20%;
     height: 50%;
   }
+  .text{
+  	text-align: center;
+  	font-size: 2rem;
+  	padding-top: 2rem;
+  }
 </style>
 
 <div id="box-container">
-  <div id="box-1"></div>
-  <div id="box-2"></div>
-  <div id="box-3"></div>
+  <div id="box-1"><p class="text">1.</p></div>
+  <div id="box-2"><p class="text">2.</p></div>
+  <div id="box-3"><p class="text">3.</p></div>
 </div>
 
 </body>
